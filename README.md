@@ -12,9 +12,9 @@ Conditional logistic regression has been widely applied as a multivariable metho
 
 Please download "clogitrr_1.1-1.tar.gz" and install it by R menu: "packages" -> "Install package(s) from local files...".
 
-Download: [please click this link](https://github.com/nomahi/glmmrr/raw/main/clogitrr_1.1-1.tar.gz)
+Download: [please click this link](https://github.com/nomahi/clogitrr/blob/main/clogitrr_1.1-1.tar.gz)
 
-Manual: [please click this link](https://github.com/nomahi/glmmrr/raw/main/clogitrr_1.1-1.pdf)
+Manual: [please click this link](https://github.com/nomahi/clogitrr/blob/main/clogitrr_1.1-1.pdf)
 
 
 
