@@ -20,6 +20,8 @@ Manual: [please click this link](https://github.com/nomahi/clogitrr/raw/main/clo
 
 
 
+## Example code
+
 ```r
 
 # "Conditional logistic regression with augmented pseudo-observations for risk ratio estimation"
