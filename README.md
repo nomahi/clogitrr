@@ -10,17 +10,15 @@ Conditional logistic regression has been widely applied as a multivariable metho
 
 ## Installation
 
-Please download "clogitrr_1.1-1.tar.gz" and install it by R menu: "packages" -> "Install package(s) from local files...".
+Please download "clogitrr_2.1-1.tar.gz" and install it by R menu: "packages" -> "Install package(s) from local files...".
 
-Download: [please click this link](https://github.com/nomahi/clogitrr/raw/main/clogitrr_1.1-1.tar.gz)
+Download: [please click this link](https://github.com/nomahi/clogitrr/raw/main/clogitrr_2.1-1.tar.gz)
 
-Manual: [please click this link](https://github.com/nomahi/clogitrr/raw/main/clogitrr_1.1-1.pdf)
-
-
+Manual: [please click this link](https://github.com/nomahi/clogitrr/raw/main/clogitrr_2.1-1.pdf)
 
 
 
-## Example code
+
 
 ```r
 
@@ -35,7 +33,7 @@ Manual: [please click this link](https://github.com/nomahi/clogitrr/raw/main/clo
 ###
 
 # Download the R package file from the following URL:
-# https://github.com/nomahi/clogitrr/raw/main/clogitrr_1.1-1.tar.gz
+# https://github.com/nomahi/clogitrr/raw/main/clogitrr_2.1-1.tar.gz
 
 # Then, install the package (tar.gz format) by R menu: "packages" -> "Install package(s) from local files...".
 
@@ -87,8 +85,5 @@ R1 <- foreach(b = 1:B, .combine = rbind, .options.snow = opts) %dopar% {
 
 stopCluster(cl)
 
-R2 <- scoef(gm2, eform=TRUE)					# Risk-ratio estimates; 95%CIs and P-values are incorrect (based on the naive model variances)
-
-RR <- R2[,1]
-cbind(RR,sumboot(R1,eform=TRUE))			# Estimates, 95%CIs and P-values of risk-ratios by bootstrap
+boot_summary(gm2, R1, eform = TRUE)			# Estimates, 95%CIs and P-values of risk-ratios by bootstrap
 
