@@ -4,7 +4,7 @@
 
 ## Conditional Logistic Regression with Augmented Pseudo-Observations for Risk Ratio Estimation
 
-Conditional logistic regression has been widely applied as a multivariable method for analyzing stratified binary outcome data. However, the resulting odds ratio estimator can only be interpreted as an approximation to the risk ratio under the rare-event assumption and cannot generally serve as a direct effect measure. To address this limitation, Noma (2025) proposed a novel approach that yields a consistent risk ratio estimator by incorporating pseudo-observations into conditional logistic regression. A key advantage of this method is that it can be implemented directly in standard statistical software for conditional logistic regression simply by modifying the dataset. This package provides computational tools for applying the proposed risk ratio estimation method within the conditional logistic regression framework.
+Conditional logistic regression has been widely applied as a multivariable method for analyzing stratified binary outcome data. However, the resulting odds ratio estimator can only be interpreted as an approximation to the risk ratio under the rare-event assumption and cannot generally serve as a direct effect measure. To address this limitation, Noma and Gosho (2026) proposed a novel approach that yields a consistent risk ratio estimator by incorporating pseudo-observations into conditional logistic regression. A key advantage of this method is that it can be implemented directly in standard statistical software for conditional logistic regression simply by modifying the dataset. This package provides computational tools for applying the proposed risk ratio estimation method within the conditional logistic regression framework.
 
 
 
@@ -23,7 +23,7 @@ Manual: [please click this link](https://github.com/nomahi/clogitrr/raw/main/clo
 ```r
 
 # "Conditional logistic regression with augmented pseudo-observations for risk ratio estimation"
-#  by Hisashi Noma
+#  by Hisashi Noma and Masahiko Gosho
 
 #  R example code for implementing the modified conditional logistic regression analysis
 
